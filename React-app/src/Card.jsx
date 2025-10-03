@@ -1,11 +1,14 @@
+import profilepic from './assets/profile.jpg'
+import './Card.css'
+
 function Card() {
     return (
-        <div className="card">
-            <img></img>
-            <h2>Rehan Khna</h2>
-            <p>I am studing in computer engineering coarse
-            </p>
+        <div className="Card">
+            <img className="cardImage" alt="Profile picture" src={profilepic} />
+            <h2 className="cardHeader">Monk D. Luffy</h2>
+            <p className="cardPara">I am going to be the King of the Pirates!</p>
         </div>
     );
 }
-export default Card
+
+export default Card;
