@@ -10,6 +10,8 @@ import ProfilePic from "./ProfilePic.jsx";
 import MyComponent from "./MyComponent.jsx";
 import Counter from "./Counter.jsx";
 import MyComponent2 from "./MyComponent2.jsx";
+import ColorPicker from "./ColorPick.jsx";
+
 
 function App() {
   const fruits = [
@@ -23,9 +25,11 @@ function App() {
     { id: 8, name: "Cauliflower", cal: 56 },
     { id: 9, name: "brinjle", cal: 78 }]
   return (<>
+    <Counter />
+    {/* <ColorPicker />
     <MyComponent2 />
-    {/* <Counter />
-    <MyComponent />
+   <MyComponent />
+  
     <ProfilePic />
     <Button />
     {fruits.length > 0 && <List items={fruits} />}
