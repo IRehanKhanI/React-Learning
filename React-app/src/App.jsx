@@ -7,6 +7,9 @@ import UserGreeting from "./UserGreeting.jsx"
 import List from "./List.jsx"
 import Button from "./Button.jsx";
 import ProfilePic from "./ProfilePic.jsx";
+import MyComponent from "./MyComponent.jsx";
+import Counter from "./Counter.jsx";
+import MyComponent2 from "./MyComponent2.jsx";
 
 function App() {
   const fruits = [
@@ -19,25 +22,27 @@ function App() {
     { id: 7, name: "Potato", cal: 85 },
     { id: 8, name: "Cauliflower", cal: 56 },
     { id: 9, name: "brinjle", cal: 78 }]
-  return (
-    <>
-      <ProfilePic />
-      <Button />
-      {/* {fruits.length > 0 && <List items={fruits} />}
+  return (<>
+    <MyComponent2 />
+    {/* <Counter />
+    <MyComponent />
+    <ProfilePic />
+    <Button />
+    {fruits.length > 0 && <List items={fruits} />}
 
-      {vege.length > 0 ? <List items={vege} category="Vgetables" /> : null}
+    {vege.length > 0 ? <List items={vege} category="Vgetables" /> : null}
 
-      <Header></Header>
-      <UserGreeting isLoggedin={true} username="rehankhan" />
-      <Food />
-      <Card></Card>
-      <Student name='Rehan khan' age={18} isStudent={true} />
-      <Student name='Rehan khan' age={19} isStudent={true} />
-      <Student name='Rehan khan' age={19} isStudent={true} />
-      <Student name='John' age={33} isStudent={false} />
-      <Student name="Larry" />
-      <Footer /> */}
-    </>
+    <Header></Header>
+    <UserGreeting isLoggedin={true} username="rehankhan" />
+    <Food />
+    <Card></Card>
+    <Student name='Rehan khan' age={18} isStudent={true} />
+    <Student name='Rehan khan' age={19} isStudent={true} />
+    <Student name='Rehan khan' age={19} isStudent={true} />
+    <Student name='John' age={33} isStudent={false} />
+    <Student name="Larry" />
+    <Footer /> */}
+  </>
   );
 }
 

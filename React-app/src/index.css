@@ -44,3 +44,124 @@ body {
   margin: 10px;
   display: inline-block;
 }
+
+/* --- Tag-based global styles (no IDs or class names) --- */
+
+/* Headings */
+h1,
+h2,
+h3 {
+  margin: 0 0 10px 0;
+  line-height: 1.15;
+  color: #e6eef8;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+
+/* Paragraphs and small text */
+p {
+  color: #dfe9f3;
+  margin: 0 0 12px 0;
+  font-size: 0.98rem;
+}
+small {
+  color: #9fb0c8;
+}
+
+/* Links */
+a {
+  color: #8bd3ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lists */
+ul,
+ol {
+  padding-left: 1.2rem;
+  margin: 0 0 12px 0;
+}
+li {
+  margin: 6px 0;
+}
+
+/* Form controls */
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 8px 10px;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow 0.12s ease, transform 0.08s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.12);
+  border-color: rgba(124, 58, 237, 0.28);
+  transform: translateY(-1px);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  font: inherit;
+  cursor: pointer;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(3, 7, 18, 0.6);
+}
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Layout semantic elements */
+header,
+footer,
+nav,
+main,
+section {
+  display: block;
+}
+
+/* Simple responsive container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* small helper */
+.muted {
+  color: #9fb0c8;
+}
